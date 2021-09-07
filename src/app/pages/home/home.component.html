@@ -1,0 +1,23 @@
+<nz-breadcrumb>
+	<nz-breadcrumb-item>Home</nz-breadcrumb-item>
+	<nz-breadcrumb-item>{{crumb}}</nz-breadcrumb-item>
+</nz-breadcrumb>
+<h1 class="app-home__title">Home</h1>
+
+<div class="app-home__content">
+	<div class="app-home__json-data-container">
+		<div class="d-flex"> 
+			
+			<div *ngIf="gamesData.length" class="d-flex flex-wrap"  >
+				
+				<nz-card *ngFor="let game of gamesData" class="p-3" nzHoverable style="width:240px" [nzCover]="coverTemplate">
+					<!-- {{"http:"+game.thumb.url}} -->
+					<nz-card-meta [nzTitle]="game.title" [nzDescription]="game.tag"></nz-card-meta>
+					<ng-template #coverTemplate>
+						<img alt="example" [src]="'http:'+game?.thumb?.url" />
+					</ng-template>
+				</nz-card>
+			</div>
+		</div>
+	</div>
+</div>

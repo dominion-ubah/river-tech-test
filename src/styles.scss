@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~ng-zorro-antd/ng-zorro-antd.min.css";
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+}
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    color: white !important;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .trigger:hover {
+    color: white;
+  }
+  .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+  }
+
+  .layout {
+    min-height: 100vh;
+  }
+  .sider-menu {
+    height: 100vh;
+    border-right: 0;
+  }
+  nz-sider {
+    overflow: auto;
+    height: 100%;
+    position: fixed;
+    left: 0;
+  }
+
+  .right-layout {
+    margin-left: 50px;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  nz-header {
+    background: #fff;
+    padding: 0;
+  }
+
+  nz-content {
+    margin: 24px 16px 0;
+    overflow: initial;
+  }
+
+  .inner-content {
+    padding: 24px;
+    background: #fff;
+    text-align: center;
+  }
+
+  nz-footer {
+    text-align: center;
+
+  }
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
